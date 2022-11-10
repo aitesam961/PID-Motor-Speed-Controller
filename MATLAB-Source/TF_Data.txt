@@ -1,0 +1,35 @@
+>> tf1
+
+tf1 =
+ 
+  From input "u1" to output "y1":
+  5.709 s + 0.4738
+  -----------------
+  s^2 + 13.12 s + 2
+ 
+Name: tf1
+Continuous-time identified transfer function.
+
+Parameterization:
+   Number of poles: 2   Number of zeros: 1
+   Number of free coefficients: 4
+   Use "tfdata", "getpvec", "getcov" for parameters and their uncertainties.
+
+Status:                                            
+Estimated using TFEST on time domain data "mydata".
+Fit to estimation data: 96.07% (stability enforced)
+FPE: 0.006229, MSE: 0.002492                       
+>> step(tf1)
+>> C
+
+C =
+ 
+             1 
+  Kp + Ki * ---
+             s 
+
+  with Kp = 8.86, Ki = 221
+ 
+Continuous-time PI controller in parallel form.
+
+>> 

@@ -1,0 +1,14 @@
+* C:\Users\aites\Documents\LTspiceXVII\OP_AMP_Substractor\Op_AMP_Substractor.asc
+V1 VDC 0 15V
+XU1 VFB2 VFB1 VDC 0 out level1 Avol=1Meg GBW=10Meg Vos=0 En=0 Enk=0 In=0 Ink=0 Rin=500Meg
+R1 VFB2 FB_SYS 1k
+R2 out VFB2 1k
+R3 VFB1 Source 1k
+R4 0 VFB1 1k
+V2 Source 0 12V
+V3 FB_SYS 0 8V
+;tran 100
+.dc V3 0 13 0.1
+.lib UniversalOpAmp1.lib
+.backanno
+.end
